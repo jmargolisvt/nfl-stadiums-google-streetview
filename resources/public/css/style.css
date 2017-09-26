@@ -1,0 +1,45 @@
+/* some style */
+body {
+	text-align: center;
+	font-family: monospace;
+}
+
+label {
+	clear: both;
+	display: block;
+}
+
+button {
+    padding: 2%;
+    color: white;
+    background: darkred;
+    font-size: 1em;
+}
+
+.home {
+	background-color: darkblue;
+	padding: 2%;
+	color: white;
+}
+
+input {
+	height: 30px;
+	font-size: 1em;
+}
+
+#stadium {
+	margin: 5%;
+}
+
+#teams {
+	cursor: pointer;
+	word-wrap: break-word;
+}
+
+.team {
+	margin: 0 1%;
+}
+
+#title {
+	font-size: 2em;
+}
