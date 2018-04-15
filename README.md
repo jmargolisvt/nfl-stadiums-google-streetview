@@ -1,4 +1,14 @@
-## Setup
+# NFL Stadium Google Street View
+
+Ever want to visit all the NFL stadiums without the hassle of actually going there?  Now you sorta can!
+
+To run this project, you'll need a [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key).
+In the `/data` directory, create a file called "google-api.cljs".  It should look like this:
+
+    (ns data.google-api)
+
+    (def google-key "my-google-maps-api-key")
+
 
 To get an interactive development environment run:
 
@@ -13,19 +23,4 @@ get a Browser Connected REPL. An easy way to try it is:
 
 and you should see an alert in the browser window.
 
-To clean all compiled files:
-
-    lein clean
-
-To create a production build run:
-
-    lein do clean, cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL.
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+The street addresses don't always provide the best view for the stadium, so if you have better data, please feel free to create a pull request.
